@@ -64,7 +64,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task1.V18
             this.labelCondition_ZAA.AutoSize = true;
             this.labelCondition_ZAA.Location = new System.Drawing.Point(30, 53);
             this.labelCondition_ZAA.Name = "labelCondition_ZAA";
-            this.labelCondition_ZAA.Size = new System.Drawing.Size(395, 51);
+            this.labelCondition_ZAA.Size = new System.Drawing.Size(360, 48);
             this.labelCondition_ZAA.TabIndex = 0;
             this.labelCondition_ZAA.Text = "Протабулировать f(x) = (2sin(x) / (3x + 1,2)) + cos(x) - 7x * 2 \r\nна заданном диа" +
     "позоне [-5;5]. \r\nРезультат вывести в виде таблицы.";
@@ -102,7 +102,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task1.V18
             this.labelResult_ZAA.AutoSize = true;
             this.labelResult_ZAA.Location = new System.Drawing.Point(7, 22);
             this.labelResult_ZAA.Name = "labelResult_ZAA";
-            this.labelResult_ZAA.Size = new System.Drawing.Size(80, 17);
+            this.labelResult_ZAA.Size = new System.Drawing.Size(81, 16);
             this.labelResult_ZAA.TabIndex = 0;
             this.labelResult_ZAA.Text = "Результат:";
             // 
@@ -143,7 +143,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task1.V18
             this.labelStopStep_ZAA.AutoSize = true;
             this.labelStopStep_ZAA.Location = new System.Drawing.Point(109, 23);
             this.labelStopStep_ZAA.Name = "labelStopStep_ZAA";
-            this.labelStopStep_ZAA.Size = new System.Drawing.Size(89, 17);
+            this.labelStopStep_ZAA.Size = new System.Drawing.Size(85, 16);
             this.labelStopStep_ZAA.TabIndex = 1;
             this.labelStopStep_ZAA.Text = "Конец шага:";
             // 
@@ -152,7 +152,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task1.V18
             this.labelStartStep_ZAA.AutoSize = true;
             this.labelStartStep_ZAA.Location = new System.Drawing.Point(6, 23);
             this.labelStartStep_ZAA.Name = "labelStartStep_ZAA";
-            this.labelStartStep_ZAA.Size = new System.Drawing.Size(87, 17);
+            this.labelStartStep_ZAA.Size = new System.Drawing.Size(84, 16);
             this.labelStartStep_ZAA.TabIndex = 0;
             this.labelStartStep_ZAA.Text = "Старт шага:";
             // 
@@ -194,6 +194,8 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task1.V18
             this.Controls.Add(this.groupBoxOutputData_ZAA);
             this.Controls.Add(this.groupBoxCondition_ZAA);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 1 | Вариант 18 | Жданова А. А.";
