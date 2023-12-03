@@ -77,11 +77,11 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
             this.labelCondition_ZAA.Location = new System.Drawing.Point(7, 22);
             this.labelCondition_ZAA.MaximumSize = new System.Drawing.Size(414, 191);
             this.labelCondition_ZAA.Name = "labelCondition_ZAA";
-            this.labelCondition_ZAA.Size = new System.Drawing.Size(414, 191);
+            this.labelCondition_ZAA.Size = new System.Drawing.Size(241, 160);
             this.labelCondition_ZAA.TabIndex = 0;
             this.labelCondition_ZAA.Text = "Дана матрица 5 на 5\r\n\r\n  -9   -4  17  -1 -20\r\n -19  18  -4   2   14\r\n -12  16  -2" +
     "   7   18\r\n -16  15   4 -12 -13\r\n -15  -4 -16   1  -14\r\n\r\nЗаменить четные значен" +
-    "ия в пятой строке на 0.\r\n";
+    "ия в пятой\r\nстроке на 0.\r\n";
             // 
             // groupBoxOutputData_ZAA
             // 
@@ -99,7 +99,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
             this.labelResult_ZAA.AutoSize = true;
             this.labelResult_ZAA.Location = new System.Drawing.Point(7, 18);
             this.labelResult_ZAA.Name = "labelResult_ZAA";
-            this.labelResult_ZAA.Size = new System.Drawing.Size(80, 17);
+            this.labelResult_ZAA.Size = new System.Drawing.Size(81, 16);
             this.labelResult_ZAA.TabIndex = 1;
             this.labelResult_ZAA.Text = "Результат:";
             // 
@@ -144,7 +144,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 409);
+            this.ClientSize = new System.Drawing.Size(1011, 417);
             this.Controls.Add(this.buttonHelp_ZAA);
             this.Controls.Add(this.buttonDone_ZAA);
             this.Controls.Add(this.groupBoxOutputData_ZAA);
