@@ -94,6 +94,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             this.textBoxInputVarX_ZAA.Name = "textBoxInputVarX_ZAA";
             this.textBoxInputVarX_ZAA.Size = new System.Drawing.Size(100, 22);
             this.textBoxInputVarX_ZAA.TabIndex = 1;
+            this.textBoxInputVarX_ZAA.Text = "3";
             this.textBoxInputVarX_ZAA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxVarX_KeyPress);
             // 
             // labelVarX_ZAA
