@@ -42,7 +42,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0 выполнил студент группы ПКТб-23-1 Жданова Анна Александровна", "Сообщение"); 
+            MessageBox.Show("Таск 0 выполнил студент группы ПКТб-23-1 Жданова Анна Александровна", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
