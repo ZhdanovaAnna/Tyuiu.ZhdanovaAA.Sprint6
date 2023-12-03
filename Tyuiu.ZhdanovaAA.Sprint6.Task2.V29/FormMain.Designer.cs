@@ -35,23 +35,23 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task2.V29
             this.groupBoxCondition_ZAA = new System.Windows.Forms.GroupBox();
             this.labelCondition_ZAA = new System.Windows.Forms.Label();
             this.groupBoxOutputData_ZAA = new System.Windows.Forms.GroupBox();
-            this.labelResult_ZAA = new System.Windows.Forms.Label();
-            this.groupBoxInputData_ZAA = new System.Windows.Forms.GroupBox();
-            this.labelStartStep_ZAA = new System.Windows.Forms.Label();
-            this.textBoxStartStep_ZAA = new System.Windows.Forms.TextBox();
-            this.labelStopStep_ZAA = new System.Windows.Forms.Label();
-            this.textBoxStopStep_ZAA = new System.Windows.Forms.TextBox();
-            this.buttonHelp_ZAA = new System.Windows.Forms.Button();
-            this.buttonDone_ZAA = new System.Windows.Forms.Button();
-            this.chartFunction_ZAA = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridViewFunction_ZAA = new System.Windows.Forms.DataGridView();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Y = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chartFunction_ZAA = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.labelResult_ZAA = new System.Windows.Forms.Label();
+            this.groupBoxInputData_ZAA = new System.Windows.Forms.GroupBox();
+            this.textBoxStopStep_ZAA = new System.Windows.Forms.TextBox();
+            this.labelStopStep_ZAA = new System.Windows.Forms.Label();
+            this.textBoxStartStep_ZAA = new System.Windows.Forms.TextBox();
+            this.labelStartStep_ZAA = new System.Windows.Forms.Label();
+            this.buttonHelp_ZAA = new System.Windows.Forms.Button();
+            this.buttonDone_ZAA = new System.Windows.Forms.Button();
             this.groupBoxCondition_ZAA.SuspendLayout();
             this.groupBoxOutputData_ZAA.SuspendLayout();
-            this.groupBoxInputData_ZAA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_ZAA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_ZAA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_ZAA)).BeginInit();
+            this.groupBoxInputData_ZAA.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxCondition_ZAA
@@ -69,7 +69,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task2.V29
             this.labelCondition_ZAA.AutoSize = true;
             this.labelCondition_ZAA.Location = new System.Drawing.Point(7, 22);
             this.labelCondition_ZAA.Name = "labelCondition_ZAA";
-            this.labelCondition_ZAA.Size = new System.Drawing.Size(499, 64);
+            this.labelCondition_ZAA.Size = new System.Drawing.Size(399, 51);
             this.labelCondition_ZAA.TabIndex = 0;
             this.labelCondition_ZAA.Text = "Протабулировать f(x) = (2cos(x) + 2) / (2x -1) + cos(x) -5x + 3\r\nна заданном диап" +
     "озоне [-5;5].\r\nРезультат вывести в DataGridView и построить график.";
@@ -85,100 +85,6 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task2.V29
             this.groupBoxOutputData_ZAA.TabIndex = 1;
             this.groupBoxOutputData_ZAA.TabStop = false;
             this.groupBoxOutputData_ZAA.Text = "Вывод данных";
-            // 
-            // labelResult_ZAA
-            // 
-            this.labelResult_ZAA.AutoSize = true;
-            this.labelResult_ZAA.Location = new System.Drawing.Point(7, 22);
-            this.labelResult_ZAA.Name = "labelResult_ZAA";
-            this.labelResult_ZAA.Size = new System.Drawing.Size(100, 21);
-            this.labelResult_ZAA.TabIndex = 0;
-            this.labelResult_ZAA.Text = "Результат:";
-            // 
-            // groupBoxInputData_ZAA
-            // 
-            this.groupBoxInputData_ZAA.Controls.Add(this.textBoxStopStep_ZAA);
-            this.groupBoxInputData_ZAA.Controls.Add(this.labelStopStep_ZAA);
-            this.groupBoxInputData_ZAA.Controls.Add(this.textBoxStartStep_ZAA);
-            this.groupBoxInputData_ZAA.Controls.Add(this.labelStartStep_ZAA);
-            this.groupBoxInputData_ZAA.Location = new System.Drawing.Point(13, 348);
-            this.groupBoxInputData_ZAA.Name = "groupBoxInputData_ZAA";
-            this.groupBoxInputData_ZAA.Size = new System.Drawing.Size(306, 90);
-            this.groupBoxInputData_ZAA.TabIndex = 2;
-            this.groupBoxInputData_ZAA.TabStop = false;
-            this.groupBoxInputData_ZAA.Text = "Ввод данных";
-            // 
-            // labelStartStep_ZAA
-            // 
-            this.labelStartStep_ZAA.AutoSize = true;
-            this.labelStartStep_ZAA.Location = new System.Drawing.Point(9, 22);
-            this.labelStartStep_ZAA.Name = "labelStartStep_ZAA";
-            this.labelStartStep_ZAA.Size = new System.Drawing.Size(109, 21);
-            this.labelStartStep_ZAA.TabIndex = 0;
-            this.labelStartStep_ZAA.Text = "Старт шага:";
-            // 
-            // textBoxStartStep_ZAA
-            // 
-            this.textBoxStartStep_ZAA.Location = new System.Drawing.Point(12, 47);
-            this.textBoxStartStep_ZAA.Name = "textBoxStartStep_ZAA";
-            this.textBoxStartStep_ZAA.Size = new System.Drawing.Size(131, 22);
-            this.textBoxStartStep_ZAA.TabIndex = 1;
-            this.textBoxStartStep_ZAA.Text = "-5";
-            // 
-            // labelStopStep_ZAA
-            // 
-            this.labelStopStep_ZAA.AutoSize = true;
-            this.labelStopStep_ZAA.Location = new System.Drawing.Point(160, 22);
-            this.labelStopStep_ZAA.Name = "labelStopStep_ZAA";
-            this.labelStopStep_ZAA.Size = new System.Drawing.Size(111, 21);
-            this.labelStopStep_ZAA.TabIndex = 2;
-            this.labelStopStep_ZAA.Text = "Конец шага:";
-            // 
-            // textBoxStopStep_ZAA
-            // 
-            this.textBoxStopStep_ZAA.Location = new System.Drawing.Point(163, 46);
-            this.textBoxStopStep_ZAA.Name = "textBoxStopStep_ZAA";
-            this.textBoxStopStep_ZAA.Size = new System.Drawing.Size(132, 22);
-            this.textBoxStopStep_ZAA.TabIndex = 3;
-            this.textBoxStopStep_ZAA.Text = "5";
-            // 
-            // buttonHelp_ZAA
-            // 
-            this.buttonHelp_ZAA.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonHelp_ZAA.Location = new System.Drawing.Point(325, 355);
-            this.buttonHelp_ZAA.Name = "buttonHelp_ZAA";
-            this.buttonHelp_ZAA.Size = new System.Drawing.Size(110, 83);
-            this.buttonHelp_ZAA.TabIndex = 3;
-            this.buttonHelp_ZAA.Text = "Справка";
-            this.buttonHelp_ZAA.UseVisualStyleBackColor = false;
-            // 
-            // buttonDone_ZAA
-            // 
-            this.buttonDone_ZAA.BackColor = System.Drawing.Color.DarkGreen;
-            this.buttonDone_ZAA.Location = new System.Drawing.Point(433, 355);
-            this.buttonDone_ZAA.Name = "buttonDone_ZAA";
-            this.buttonDone_ZAA.Size = new System.Drawing.Size(184, 83);
-            this.buttonDone_ZAA.TabIndex = 4;
-            this.buttonDone_ZAA.Text = "Выполнить";
-            this.buttonDone_ZAA.UseVisualStyleBackColor = false;
-            this.buttonDone_ZAA.Click += new System.EventHandler(this.buttonDone_ZAA_Click);
-            // 
-            // chartFunction_ZAA
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chartFunction_ZAA.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartFunction_ZAA.Legends.Add(legend1);
-            this.chartFunction_ZAA.Location = new System.Drawing.Point(190, 46);
-            this.chartFunction_ZAA.Name = "chartFunction_ZAA";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartFunction_ZAA.Series.Add(series1);
-            this.chartFunction_ZAA.Size = new System.Drawing.Size(482, 374);
-            this.chartFunction_ZAA.TabIndex = 1;
             // 
             // dataGridViewFunction_ZAA
             // 
@@ -220,6 +126,101 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task2.V29
             this.Y.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Y.Width = 90;
             // 
+            // chartFunction_ZAA
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartFunction_ZAA.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartFunction_ZAA.Legends.Add(legend1);
+            this.chartFunction_ZAA.Location = new System.Drawing.Point(190, 46);
+            this.chartFunction_ZAA.Name = "chartFunction_ZAA";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFunction_ZAA.Series.Add(series1);
+            this.chartFunction_ZAA.Size = new System.Drawing.Size(482, 374);
+            this.chartFunction_ZAA.TabIndex = 1;
+            // 
+            // labelResult_ZAA
+            // 
+            this.labelResult_ZAA.AutoSize = true;
+            this.labelResult_ZAA.Location = new System.Drawing.Point(7, 22);
+            this.labelResult_ZAA.Name = "labelResult_ZAA";
+            this.labelResult_ZAA.Size = new System.Drawing.Size(80, 17);
+            this.labelResult_ZAA.TabIndex = 0;
+            this.labelResult_ZAA.Text = "Результат:";
+            // 
+            // groupBoxInputData_ZAA
+            // 
+            this.groupBoxInputData_ZAA.Controls.Add(this.textBoxStopStep_ZAA);
+            this.groupBoxInputData_ZAA.Controls.Add(this.labelStopStep_ZAA);
+            this.groupBoxInputData_ZAA.Controls.Add(this.textBoxStartStep_ZAA);
+            this.groupBoxInputData_ZAA.Controls.Add(this.labelStartStep_ZAA);
+            this.groupBoxInputData_ZAA.Location = new System.Drawing.Point(13, 348);
+            this.groupBoxInputData_ZAA.Name = "groupBoxInputData_ZAA";
+            this.groupBoxInputData_ZAA.Size = new System.Drawing.Size(306, 90);
+            this.groupBoxInputData_ZAA.TabIndex = 2;
+            this.groupBoxInputData_ZAA.TabStop = false;
+            this.groupBoxInputData_ZAA.Text = "Ввод данных";
+            // 
+            // textBoxStopStep_ZAA
+            // 
+            this.textBoxStopStep_ZAA.Location = new System.Drawing.Point(163, 46);
+            this.textBoxStopStep_ZAA.Name = "textBoxStopStep_ZAA";
+            this.textBoxStopStep_ZAA.Size = new System.Drawing.Size(132, 22);
+            this.textBoxStopStep_ZAA.TabIndex = 3;
+            this.textBoxStopStep_ZAA.Text = "5";
+            // 
+            // labelStopStep_ZAA
+            // 
+            this.labelStopStep_ZAA.AutoSize = true;
+            this.labelStopStep_ZAA.Location = new System.Drawing.Point(160, 22);
+            this.labelStopStep_ZAA.Name = "labelStopStep_ZAA";
+            this.labelStopStep_ZAA.Size = new System.Drawing.Size(89, 17);
+            this.labelStopStep_ZAA.TabIndex = 2;
+            this.labelStopStep_ZAA.Text = "Конец шага:";
+            // 
+            // textBoxStartStep_ZAA
+            // 
+            this.textBoxStartStep_ZAA.Location = new System.Drawing.Point(12, 47);
+            this.textBoxStartStep_ZAA.Name = "textBoxStartStep_ZAA";
+            this.textBoxStartStep_ZAA.Size = new System.Drawing.Size(131, 22);
+            this.textBoxStartStep_ZAA.TabIndex = 1;
+            this.textBoxStartStep_ZAA.Text = "-5";
+            // 
+            // labelStartStep_ZAA
+            // 
+            this.labelStartStep_ZAA.AutoSize = true;
+            this.labelStartStep_ZAA.Location = new System.Drawing.Point(9, 22);
+            this.labelStartStep_ZAA.Name = "labelStartStep_ZAA";
+            this.labelStartStep_ZAA.Size = new System.Drawing.Size(87, 17);
+            this.labelStartStep_ZAA.TabIndex = 0;
+            this.labelStartStep_ZAA.Text = "Старт шага:";
+            // 
+            // buttonHelp_ZAA
+            // 
+            this.buttonHelp_ZAA.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonHelp_ZAA.Location = new System.Drawing.Point(325, 355);
+            this.buttonHelp_ZAA.Name = "buttonHelp_ZAA";
+            this.buttonHelp_ZAA.Size = new System.Drawing.Size(110, 83);
+            this.buttonHelp_ZAA.TabIndex = 3;
+            this.buttonHelp_ZAA.Text = "Справка";
+            this.buttonHelp_ZAA.UseVisualStyleBackColor = false;
+            this.buttonHelp_ZAA.Click += new System.EventHandler(this.buttonHelp_ZAA_Click);
+            // 
+            // buttonDone_ZAA
+            // 
+            this.buttonDone_ZAA.BackColor = System.Drawing.Color.DarkGreen;
+            this.buttonDone_ZAA.Location = new System.Drawing.Point(433, 355);
+            this.buttonDone_ZAA.Name = "buttonDone_ZAA";
+            this.buttonDone_ZAA.Size = new System.Drawing.Size(184, 83);
+            this.buttonDone_ZAA.TabIndex = 4;
+            this.buttonDone_ZAA.Text = "Выполнить";
+            this.buttonDone_ZAA.UseVisualStyleBackColor = false;
+            this.buttonDone_ZAA.Click += new System.EventHandler(this.buttonDone_ZAA_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -241,10 +242,10 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task2.V29
             this.groupBoxCondition_ZAA.PerformLayout();
             this.groupBoxOutputData_ZAA.ResumeLayout(false);
             this.groupBoxOutputData_ZAA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_ZAA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_ZAA)).EndInit();
             this.groupBoxInputData_ZAA.ResumeLayout(false);
             this.groupBoxInputData_ZAA.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_ZAA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_ZAA)).EndInit();
             this.ResumeLayout(false);
 
         }

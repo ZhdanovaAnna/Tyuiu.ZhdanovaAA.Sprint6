@@ -54,5 +54,10 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task2.V29
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void buttonHelp_ZAA_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Таск 2 выполнил студент группы ПКТб-23-1 Жданова Анна Александровна", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
