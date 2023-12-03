@@ -63,7 +63,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             this.labelCondition_ZAA.AutoSize = true;
             this.labelCondition_ZAA.Location = new System.Drawing.Point(6, 21);
             this.labelCondition_ZAA.Name = "labelCondition_ZAA";
-            this.labelCondition_ZAA.Size = new System.Drawing.Size(245, 17);
+            this.labelCondition_ZAA.Size = new System.Drawing.Size(241, 16);
             this.labelCondition_ZAA.TabIndex = 1;
             this.labelCondition_ZAA.Text = "Вычислить выражение по формуле:";
             // 
@@ -101,7 +101,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             this.labelVarX_ZAA.AutoSize = true;
             this.labelVarX_ZAA.Location = new System.Drawing.Point(9, 31);
             this.labelVarX_ZAA.Name = "labelVarX_ZAA";
-            this.labelVarX_ZAA.Size = new System.Drawing.Size(108, 17);
+            this.labelVarX_ZAA.Size = new System.Drawing.Size(104, 16);
             this.labelVarX_ZAA.TabIndex = 0;
             this.labelVarX_ZAA.Text = "Переменная X:";
             // 
@@ -129,7 +129,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             this.lableResult_ZAA.AutoSize = true;
             this.lableResult_ZAA.Location = new System.Drawing.Point(17, 31);
             this.lableResult_ZAA.Name = "lableResult_ZAA";
-            this.lableResult_ZAA.Size = new System.Drawing.Size(80, 17);
+            this.lableResult_ZAA.Size = new System.Drawing.Size(81, 16);
             this.lableResult_ZAA.TabIndex = 0;
             this.lableResult_ZAA.Text = "Результат:";
             // 
@@ -166,6 +166,8 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             this.Controls.Add(this.groupBoxСondition_ZAA);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 0 | Вариант 29 | Жданова А. А.";
