@@ -57,12 +57,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task1.V18
 
 
         }
-
-        private void buttonHelp_ZAA_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Таск 1 выполнил студент группы ПКТб-23-1 Жданова Анна Александровна", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
+        
         private void textBoxStartStep_ZAA_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != ',') && (e.KeyChar != 8))
@@ -77,6 +72,11 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task1.V18
             {
                 e.Handled = true;
             }
+        }
+
+        private void buttonHelp_ZAA_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Таск 1 выполнил студент группы ПКТб-23-1 Жданова Анна Александровна", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
