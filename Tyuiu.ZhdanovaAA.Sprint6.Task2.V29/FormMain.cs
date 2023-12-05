@@ -44,6 +44,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task2.V29
                 for (int i = 0; i < len; i++)
                 {
                     this.dataGridViewFunction_ZAA.Rows.Add(Convert.ToString(startStep), Convert.ToString(valueArray[i]));
+                    this.dataGridViewFunction_ZAA.Rows[i].Height = 30;
                     this.chartFunction_ZAA.Series[0].Points.AddXY(startStep, valueArray[i]);
                     startStep++;
                 }
