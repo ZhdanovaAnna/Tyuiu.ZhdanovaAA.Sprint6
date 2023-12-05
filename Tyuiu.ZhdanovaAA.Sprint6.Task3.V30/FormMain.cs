@@ -36,7 +36,8 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
 
             for (int i = 0; i < columns; i++)
             {
-                dataGridViewOriginalMatrix_ZAA.Columns[i].Width = 25;
+                dataGridViewOriginalMatrix_ZAA.Columns[i].Width = 40;
+                dataGridViewOriginalMatrix_ZAA.Rows[i].Height = 40;
             }
 
             for (int i = 0; i < rows; i++)
@@ -59,7 +60,8 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
 
             for (int i = 0; i < columns; i++)
             {
-                dataGridViewResultMatrix_ZAA.Columns[i].Width = 25;
+                dataGridViewResultMatrix_ZAA.Columns[i].Width = 40;
+                dataGridViewResultMatrix_ZAA.Rows[i].Height = 40;
             }
 
             for (int i = 0; i < rows; i++)

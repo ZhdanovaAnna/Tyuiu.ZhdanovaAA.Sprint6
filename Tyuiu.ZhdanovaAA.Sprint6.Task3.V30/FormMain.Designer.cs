@@ -29,6 +29,9 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBoxCondition_ZAA = new System.Windows.Forms.GroupBox();
             this.dataGridViewOriginalMatrix_ZAA = new System.Windows.Forms.DataGridView();
             this.labelCondition_ZAA = new System.Windows.Forms.Label();
@@ -47,9 +50,10 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
             // 
             this.groupBoxCondition_ZAA.Controls.Add(this.dataGridViewOriginalMatrix_ZAA);
             this.groupBoxCondition_ZAA.Controls.Add(this.labelCondition_ZAA);
+            this.groupBoxCondition_ZAA.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxCondition_ZAA.Location = new System.Drawing.Point(12, 12);
             this.groupBoxCondition_ZAA.Name = "groupBoxCondition_ZAA";
-            this.groupBoxCondition_ZAA.Size = new System.Drawing.Size(650, 332);
+            this.groupBoxCondition_ZAA.Size = new System.Drawing.Size(689, 339);
             this.groupBoxCondition_ZAA.TabIndex = 0;
             this.groupBoxCondition_ZAA.TabStop = false;
             this.groupBoxCondition_ZAA.Text = "Условие";
@@ -62,34 +66,42 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
             this.dataGridViewOriginalMatrix_ZAA.AllowUserToResizeRows = false;
             this.dataGridViewOriginalMatrix_ZAA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewOriginalMatrix_ZAA.ColumnHeadersVisible = false;
-            this.dataGridViewOriginalMatrix_ZAA.Location = new System.Drawing.Point(352, 59);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewOriginalMatrix_ZAA.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewOriginalMatrix_ZAA.Location = new System.Drawing.Point(385, 55);
             this.dataGridViewOriginalMatrix_ZAA.Name = "dataGridViewOriginalMatrix_ZAA";
             this.dataGridViewOriginalMatrix_ZAA.ReadOnly = true;
             this.dataGridViewOriginalMatrix_ZAA.RowHeadersVisible = false;
             this.dataGridViewOriginalMatrix_ZAA.RowHeadersWidth = 51;
             this.dataGridViewOriginalMatrix_ZAA.RowTemplate.Height = 24;
-            this.dataGridViewOriginalMatrix_ZAA.Size = new System.Drawing.Size(263, 232);
+            this.dataGridViewOriginalMatrix_ZAA.Size = new System.Drawing.Size(271, 250);
             this.dataGridViewOriginalMatrix_ZAA.TabIndex = 1;
             // 
             // labelCondition_ZAA
             // 
             this.labelCondition_ZAA.AutoSize = true;
+            this.labelCondition_ZAA.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCondition_ZAA.Location = new System.Drawing.Point(7, 22);
-            this.labelCondition_ZAA.MaximumSize = new System.Drawing.Size(414, 191);
+            this.labelCondition_ZAA.MaximumSize = new System.Drawing.Size(297, 500);
             this.labelCondition_ZAA.Name = "labelCondition_ZAA";
-            this.labelCondition_ZAA.Size = new System.Drawing.Size(241, 160);
+            this.labelCondition_ZAA.Size = new System.Drawing.Size(297, 200);
             this.labelCondition_ZAA.TabIndex = 0;
-            this.labelCondition_ZAA.Text = "Дана матрица 5 на 5\r\n\r\n  -9   -4  17  -1 -20\r\n -19  18  -4   2   14\r\n -12  16  -2" +
-    "   7   18\r\n -16  15   4 -12 -13\r\n -15  -4 -16   1  -14\r\n\r\nЗаменить четные значен" +
-    "ия в пятой\r\nстроке на 0.\r\n";
+            this.labelCondition_ZAA.Text = resources.GetString("labelCondition_ZAA.Text");
             // 
             // groupBoxOutputData_ZAA
             // 
             this.groupBoxOutputData_ZAA.Controls.Add(this.labelResult_ZAA);
             this.groupBoxOutputData_ZAA.Controls.Add(this.dataGridViewResultMatrix_ZAA);
-            this.groupBoxOutputData_ZAA.Location = new System.Drawing.Point(668, 12);
+            this.groupBoxOutputData_ZAA.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBoxOutputData_ZAA.Location = new System.Drawing.Point(707, 12);
             this.groupBoxOutputData_ZAA.Name = "groupBoxOutputData_ZAA";
-            this.groupBoxOutputData_ZAA.Size = new System.Drawing.Size(326, 332);
+            this.groupBoxOutputData_ZAA.Size = new System.Drawing.Size(343, 339);
             this.groupBoxOutputData_ZAA.TabIndex = 1;
             this.groupBoxOutputData_ZAA.TabStop = false;
             this.groupBoxOutputData_ZAA.Text = "Вывод данных";
@@ -99,7 +111,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
             this.labelResult_ZAA.AutoSize = true;
             this.labelResult_ZAA.Location = new System.Drawing.Point(7, 18);
             this.labelResult_ZAA.Name = "labelResult_ZAA";
-            this.labelResult_ZAA.Size = new System.Drawing.Size(81, 16);
+            this.labelResult_ZAA.Size = new System.Drawing.Size(99, 20);
             this.labelResult_ZAA.TabIndex = 1;
             this.labelResult_ZAA.Text = "Результат:";
             // 
@@ -109,21 +121,30 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
             this.dataGridViewResultMatrix_ZAA.AllowUserToOrderColumns = true;
             this.dataGridViewResultMatrix_ZAA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewResultMatrix_ZAA.ColumnHeadersVisible = false;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewResultMatrix_ZAA.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewResultMatrix_ZAA.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridViewResultMatrix_ZAA.Location = new System.Drawing.Point(37, 59);
+            this.dataGridViewResultMatrix_ZAA.Location = new System.Drawing.Point(35, 55);
             this.dataGridViewResultMatrix_ZAA.Name = "dataGridViewResultMatrix_ZAA";
             this.dataGridViewResultMatrix_ZAA.ReadOnly = true;
             this.dataGridViewResultMatrix_ZAA.RowHeadersVisible = false;
             this.dataGridViewResultMatrix_ZAA.RowHeadersWidth = 51;
             this.dataGridViewResultMatrix_ZAA.RowTemplate.Height = 24;
-            this.dataGridViewResultMatrix_ZAA.Size = new System.Drawing.Size(261, 234);
+            this.dataGridViewResultMatrix_ZAA.Size = new System.Drawing.Size(271, 250);
             this.dataGridViewResultMatrix_ZAA.TabIndex = 0;
             // 
             // buttonDone_ZAA
             // 
-            this.buttonDone_ZAA.Location = new System.Drawing.Point(836, 356);
+            this.buttonDone_ZAA.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDone_ZAA.Location = new System.Drawing.Point(823, 357);
             this.buttonDone_ZAA.Name = "buttonDone_ZAA";
-            this.buttonDone_ZAA.Size = new System.Drawing.Size(158, 38);
+            this.buttonDone_ZAA.Size = new System.Drawing.Size(190, 74);
             this.buttonDone_ZAA.TabIndex = 2;
             this.buttonDone_ZAA.Text = "Выполнить";
             this.buttonDone_ZAA.UseVisualStyleBackColor = true;
@@ -132,9 +153,10 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
             // buttonHelp_ZAA
             // 
             this.buttonHelp_ZAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHelp_ZAA.Location = new System.Drawing.Point(785, 356);
+            this.buttonHelp_ZAA.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonHelp_ZAA.Location = new System.Drawing.Point(742, 357);
             this.buttonHelp_ZAA.Name = "buttonHelp_ZAA";
-            this.buttonHelp_ZAA.Size = new System.Drawing.Size(45, 38);
+            this.buttonHelp_ZAA.Size = new System.Drawing.Size(71, 74);
             this.buttonHelp_ZAA.TabIndex = 3;
             this.buttonHelp_ZAA.Text = "?";
             this.buttonHelp_ZAA.UseVisualStyleBackColor = true;
@@ -144,14 +166,13 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task3.V30
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 417);
+            this.ClientSize = new System.Drawing.Size(1062, 443);
             this.Controls.Add(this.buttonHelp_ZAA);
             this.Controls.Add(this.buttonDone_ZAA);
             this.Controls.Add(this.groupBoxOutputData_ZAA);
             this.Controls.Add(this.groupBoxCondition_ZAA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1027, 456);
-            this.MinimumSize = new System.Drawing.Size(1027, 456);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 3 | Вариант 30 | Жданова А. А.";
