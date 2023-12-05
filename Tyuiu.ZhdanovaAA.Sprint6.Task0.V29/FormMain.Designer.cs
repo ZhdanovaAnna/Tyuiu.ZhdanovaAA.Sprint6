@@ -32,7 +32,6 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             this.groupBoxСondition_ZAA = new System.Windows.Forms.GroupBox();
             this.labelCondition_ZAA = new System.Windows.Forms.Label();
             this.pictureBoxContidion_ZAA = new System.Windows.Forms.PictureBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBoxInputData_ZAA = new System.Windows.Forms.GroupBox();
             this.textBoxInputVarX_ZAA = new System.Windows.Forms.TextBox();
             this.labelVarX_ZAA = new System.Windows.Forms.Label();
@@ -51,9 +50,10 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             // 
             this.groupBoxСondition_ZAA.Controls.Add(this.labelCondition_ZAA);
             this.groupBoxСondition_ZAA.Controls.Add(this.pictureBoxContidion_ZAA);
-            this.groupBoxСondition_ZAA.Location = new System.Drawing.Point(24, 41);
+            this.groupBoxСondition_ZAA.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBoxСondition_ZAA.Location = new System.Drawing.Point(12, 12);
             this.groupBoxСondition_ZAA.Name = "groupBoxСondition_ZAA";
-            this.groupBoxСondition_ZAA.Size = new System.Drawing.Size(750, 199);
+            this.groupBoxСondition_ZAA.Size = new System.Drawing.Size(848, 246);
             this.groupBoxСondition_ZAA.TabIndex = 0;
             this.groupBoxСondition_ZAA.TabStop = false;
             this.groupBoxСondition_ZAA.Text = "Условие";
@@ -63,7 +63,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             this.labelCondition_ZAA.AutoSize = true;
             this.labelCondition_ZAA.Location = new System.Drawing.Point(6, 21);
             this.labelCondition_ZAA.Name = "labelCondition_ZAA";
-            this.labelCondition_ZAA.Size = new System.Drawing.Size(241, 16);
+            this.labelCondition_ZAA.Size = new System.Drawing.Size(288, 20);
             this.labelCondition_ZAA.TabIndex = 1;
             this.labelCondition_ZAA.Text = "Вычислить выражение по формуле:";
             // 
@@ -81,7 +81,8 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             // 
             this.groupBoxInputData_ZAA.Controls.Add(this.textBoxInputVarX_ZAA);
             this.groupBoxInputData_ZAA.Controls.Add(this.labelVarX_ZAA);
-            this.groupBoxInputData_ZAA.Location = new System.Drawing.Point(24, 246);
+            this.groupBoxInputData_ZAA.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBoxInputData_ZAA.Location = new System.Drawing.Point(12, 264);
             this.groupBoxInputData_ZAA.Name = "groupBoxInputData_ZAA";
             this.groupBoxInputData_ZAA.Size = new System.Drawing.Size(469, 143);
             this.groupBoxInputData_ZAA.TabIndex = 1;
@@ -90,9 +91,9 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             // 
             // textBoxInputVarX_ZAA
             // 
-            this.textBoxInputVarX_ZAA.Location = new System.Drawing.Point(12, 63);
+            this.textBoxInputVarX_ZAA.Location = new System.Drawing.Point(24, 63);
             this.textBoxInputVarX_ZAA.Name = "textBoxInputVarX_ZAA";
-            this.textBoxInputVarX_ZAA.Size = new System.Drawing.Size(100, 22);
+            this.textBoxInputVarX_ZAA.Size = new System.Drawing.Size(170, 27);
             this.textBoxInputVarX_ZAA.TabIndex = 1;
             this.textBoxInputVarX_ZAA.Text = "3";
             this.textBoxInputVarX_ZAA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxVarX_KeyPress);
@@ -100,9 +101,9 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             // labelVarX_ZAA
             // 
             this.labelVarX_ZAA.AutoSize = true;
-            this.labelVarX_ZAA.Location = new System.Drawing.Point(9, 31);
+            this.labelVarX_ZAA.Location = new System.Drawing.Point(16, 31);
             this.labelVarX_ZAA.Name = "labelVarX_ZAA";
-            this.labelVarX_ZAA.Size = new System.Drawing.Size(104, 16);
+            this.labelVarX_ZAA.Size = new System.Drawing.Size(126, 20);
             this.labelVarX_ZAA.TabIndex = 0;
             this.labelVarX_ZAA.Text = "Переменная X:";
             // 
@@ -110,9 +111,10 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             // 
             this.groupBoxOutputData_ZAA.Controls.Add(this.textBoxOutputResult_ZAA);
             this.groupBoxOutputData_ZAA.Controls.Add(this.lableResult_ZAA);
-            this.groupBoxOutputData_ZAA.Location = new System.Drawing.Point(499, 246);
+            this.groupBoxOutputData_ZAA.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBoxOutputData_ZAA.Location = new System.Drawing.Point(487, 264);
             this.groupBoxOutputData_ZAA.Name = "groupBoxOutputData_ZAA";
-            this.groupBoxOutputData_ZAA.Size = new System.Drawing.Size(275, 143);
+            this.groupBoxOutputData_ZAA.Size = new System.Drawing.Size(364, 143);
             this.groupBoxOutputData_ZAA.TabIndex = 2;
             this.groupBoxOutputData_ZAA.TabStop = false;
             this.groupBoxOutputData_ZAA.Text = "Вывод данных";
@@ -122,7 +124,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             this.textBoxOutputResult_ZAA.Location = new System.Drawing.Point(20, 63);
             this.textBoxOutputResult_ZAA.Name = "textBoxOutputResult_ZAA";
             this.textBoxOutputResult_ZAA.ReadOnly = true;
-            this.textBoxOutputResult_ZAA.Size = new System.Drawing.Size(100, 22);
+            this.textBoxOutputResult_ZAA.Size = new System.Drawing.Size(174, 27);
             this.textBoxOutputResult_ZAA.TabIndex = 1;
             // 
             // lableResult_ZAA
@@ -130,15 +132,16 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             this.lableResult_ZAA.AutoSize = true;
             this.lableResult_ZAA.Location = new System.Drawing.Point(17, 31);
             this.lableResult_ZAA.Name = "lableResult_ZAA";
-            this.lableResult_ZAA.Size = new System.Drawing.Size(81, 16);
+            this.lableResult_ZAA.Size = new System.Drawing.Size(99, 20);
             this.lableResult_ZAA.TabIndex = 0;
             this.lableResult_ZAA.Text = "Результат:";
             // 
             // buttonDone_ZAA
             // 
-            this.buttonDone_ZAA.Location = new System.Drawing.Point(560, 395);
+            this.buttonDone_ZAA.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDone_ZAA.Location = new System.Drawing.Point(574, 413);
             this.buttonDone_ZAA.Name = "buttonDone_ZAA";
-            this.buttonDone_ZAA.Size = new System.Drawing.Size(214, 43);
+            this.buttonDone_ZAA.Size = new System.Drawing.Size(277, 51);
             this.buttonDone_ZAA.TabIndex = 3;
             this.buttonDone_ZAA.Text = "Выполнить";
             this.buttonDone_ZAA.UseVisualStyleBackColor = true;
@@ -147,9 +150,10 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             // buttonHelp_ZAA
             // 
             this.buttonHelp_ZAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHelp_ZAA.Location = new System.Drawing.Point(499, 395);
+            this.buttonHelp_ZAA.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonHelp_ZAA.Location = new System.Drawing.Point(487, 413);
             this.buttonHelp_ZAA.Name = "buttonHelp_ZAA";
-            this.buttonHelp_ZAA.Size = new System.Drawing.Size(55, 42);
+            this.buttonHelp_ZAA.Size = new System.Drawing.Size(69, 51);
             this.buttonHelp_ZAA.TabIndex = 4;
             this.buttonHelp_ZAA.Text = "?";
             this.buttonHelp_ZAA.UseVisualStyleBackColor = true;
@@ -159,7 +163,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(872, 476);
             this.Controls.Add(this.buttonHelp_ZAA);
             this.Controls.Add(this.buttonDone_ZAA);
             this.Controls.Add(this.groupBoxOutputData_ZAA);
@@ -167,8 +171,6 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
             this.Controls.Add(this.groupBoxСondition_ZAA);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(816, 489);
-            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 0 | Вариант 29 | Жданова А. А.";
@@ -188,7 +190,6 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task0.V29
         private System.Windows.Forms.GroupBox groupBoxСondition_ZAA;
         private System.Windows.Forms.PictureBox pictureBoxContidion_ZAA;
         private System.Windows.Forms.Label labelCondition_ZAA;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBoxInputData_ZAA;
         private System.Windows.Forms.TextBox textBoxInputVarX_ZAA;
         private System.Windows.Forms.Label labelVarX_ZAA;
