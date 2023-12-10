@@ -29,6 +29,7 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task7.V22
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelAbout_ZAA = new System.Windows.Forms.Label();
             this.image_ZAA = new System.Windows.Forms.Panel();
@@ -50,13 +51,12 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task7.V22
             // 
             this.labelAbout_ZAA.AutoSize = true;
             this.labelAbout_ZAA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelAbout_ZAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAbout_ZAA.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelAbout_ZAA.Location = new System.Drawing.Point(0, 0);
             this.labelAbout_ZAA.Name = "labelAbout_ZAA";
-            this.labelAbout_ZAA.Size = new System.Drawing.Size(427, 120);
+            this.labelAbout_ZAA.Size = new System.Drawing.Size(450, 200);
             this.labelAbout_ZAA.TabIndex = 0;
-            this.labelAbout_ZAA.Text = "Студент Жданова Анна Александровна.\r\nГруппа ПКТб-23-1.\r\n\r\n\r\nТюменский индустриаль" +
-    "ный университет (с) 2023\r\nВысшая школа цифровых технологий (с) 2023";
+            this.labelAbout_ZAA.Text = resources.GetString("labelAbout_ZAA.Text");
             // 
             // image_ZAA
             // 
