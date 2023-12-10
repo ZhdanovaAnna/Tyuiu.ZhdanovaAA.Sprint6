@@ -19,24 +19,22 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task7.V22.Lib
             {
                 text = reader.ReadToEnd();
             }
-            string[] lines = text.Split('\n');
-            tmp = new int[lines[0].Split(';').Length, lines.Length];
-            for (int i = 0; i < lines.Length; i++)
+            string[] lines = text.Replace("\r", "").Split('\n');
+            tmp = new int[lines[0].Split(';').Length, lines.Length-1];
+            for (int i = 0; i < lines.Length-1; i++)
             {
                 string[] txt = lines[i].Split(';');
                 for (int j = 0; j< lines[0].Split(';').Length; j++)
                 {
-                    if (j == 11)
+                    if (j==5)
                     {
                         if (Convert.ToInt32(txt[j]) > 0 && Convert.ToInt32(txt[j])%2==0)
                         {
-                            tmp[j, i] = 111;
-                        }
-                        else
-                        {
-                            tmp[j, i] = Convert.ToInt32(txt[j]);
+                            tmp[i, j] = 111;
+                            continue;
                         }
                     }
+                    tmp[i, j] = Convert.ToInt32(txt[j]);
                 }
             }
             return tmp;
