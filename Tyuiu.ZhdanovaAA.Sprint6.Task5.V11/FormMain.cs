@@ -41,21 +41,13 @@ namespace Tyuiu.ZhdanovaAA.Sprint6.Task5.V11
                 double[] numsMass = new double[ds.len];
 
                 numsMass = ds.LoadFromDataFile(path);
-
+                this.dataGridViewData_ZAA.Rows.Clear();
                 for (int i = 0; i < numsMass.Length; i++)
                 {
                     this.chartDiagram_ZAA.Series[0].Points.AddXY(i, numsMass[i]);
-                }
-                this.dataGridViewData_ZAA.Rows.Clear();
-                int k = 1;
-                using (StreamReader reader = new StreamReader(path))
-                {
-                    string line;
-                    while ((line = reader.ReadLine()) != null)
-                    {
-                        this.dataGridViewData_ZAA.Rows.Add(k.ToString(), line);
-                        k++;
-                    }
+                    dataGridViewData_ZAA.Rows.Add(i.ToString(), numsMass[i].ToString());
+                    dataGridViewData_ZAA.Columns[i].Width = 40;
+                    dataGridViewData_ZAA.Rows[i].Height = 40;
                 }
             }
             catch
